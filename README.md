@@ -1,6 +1,6 @@
-#### Using kubectl-ai to create YAML manifests
+### Using kubectl-ai to create YAML manifests
 
-Installation kubectl-ai
+**Installation kubectl-ai**
 
 ```console
 brew tap sozercan/kubectl-ai https://github.com/sozercan/kubectl-ai
