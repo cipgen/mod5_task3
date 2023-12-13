@@ -1,0 +1,17 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: nginx-cron-job
+spec:
+  schedule: "*/5 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: nginx
+              image: nginx:latest
+              command: ["nginx"]
+              ports:
+                - containerPort: 80
+          restartPolicy: OnFailure
